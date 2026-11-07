@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galéria - Stanislav Rides</title>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+    margin:0;
+}
+
+header{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+nav{
+    background:#111827;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.gallery{
+    max-width:1200px;
+    margin:auto;
+    padding:30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Galéria výjazdov</h1>
+</header>
+
+<nav>
+<a href="index.html">Domov</a>
+<a href="trasy.html">Trasy</a>
+<a href="bikepacking.html">Bikepacking</a>
+<a href="omne.html">O mne</a>
+</nav>
+
+<div class="gallery">
+
+<img src="images/Kralova Hola.webp" alt="Kráľova hoľa">
+<img src="images/Krizava.webp" alt="Križava">
+<img src="images/Panska Javorina.webp" alt="Panská Javorina">
+<img src="images/Povazsky Inovec.webp" alt="Považský Inovec">
+<img src="images/Sitno.webp" alt="Sitno">
+<img src="images/Velka Javorina.webp" alt="Veľká Javorina">
+<img src="images/Velka Luka.webp" alt="Veľká Lúka">
+<img src="images/Velky Inovec.webp" alt="Veľký Inovec">
+
+</div>
+
+</body>
+</html>
