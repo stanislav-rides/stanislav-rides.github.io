@@ -187,18 +187,20 @@ nav a{
 </div>
 
 <script>
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
 
-document.querySelectorAll(".gallery img").forEach(img => {
-    img.addEventListener("click", () => {
-        lightbox.classList.add("active");
-        lightboxImg.src = img.src;
+document.querySelectorAll('.gallery img').forEach(function(img) {
+
+    img.addEventListener('click', function() {
+        lightbox.classList.add('active');
+        lightboxImg.src = this.src;
     });
+
 });
 
-lightbox.addEventListener("click", () => {
-    lightbox.classList.remove("active");
+lightbox.addEventListener('click', function() {
+    lightbox.classList.remove('active');
 });
 </script>
 </body>
