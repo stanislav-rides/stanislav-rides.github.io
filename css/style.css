@@ -162,3 +162,34 @@ footer {
         height: 220px;
     }
 }
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.rides-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.rides-table th {
+    background: #2e7d32;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.rides-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.rides-table tr:nth-child(even) {
+    background: #f5f5f5;
+}
+
+.rides-table tr:hover {
+    background: #e8f5e9;
+}
