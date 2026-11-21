@@ -1,10 +1,10 @@
 body {
     font-family: "Segoe UI", Arial, sans-serif;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 30px;
-    background: linear-gradient(to bottom, #eef4ea, #dfe8d7);
-    color: #2d3436;
+    background: linear-gradient(135deg, #1f2937, #111827);
+    color: #f0f0f0;
 }
 
 nav {
@@ -106,15 +106,17 @@ p {
 
 #trasy {
     margin-top: 50px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 .route {
-    background: #f9fcf7;
+    background: #1e293b;
     padding: 25px;
     margin-bottom: 30px;
     border-radius: 18px;
     border-left: 6px solid #fc4c02;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
 
 .route h3 {
@@ -192,4 +194,26 @@ footer {
 
 .rides-table tr:hover {
     background: #e8f5e9;
+}
+
+.route iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 600px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+.rides-widget {
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.rides-widget iframe {
+    width: 100%;
+    height: 650px;
+    display: block;
 }
