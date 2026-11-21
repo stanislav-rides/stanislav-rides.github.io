@@ -52,11 +52,13 @@ p {
 
 .content-box {
     background: #f9fcf7;
+    color: #2d3436;
     padding: 35px;
     border-radius: 20px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     margin-bottom: 40px;
 }
+
 
 .gallery{
     max-width:1200px;
