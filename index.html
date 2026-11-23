@@ -226,18 +226,20 @@ Počas jazdy viem pomôcť so základnými technickými problémami, navigáciou
 <section id="kontakt">
     <h2>Kontakt</h2>
 
-<form action="https://formsubmit.co/stanislav.svajdlenik@gmail.com" method="POST">
+<form onsubmit="sendMail(event)">
+    <input id="name" type="text" placeholder="Meno" required>
 
-    <input type="text" name="name" placeholder="Meno" required>
+    <input id="email" type="email" placeholder="Email" required>
 
-    <input type="email" name="email" placeholder="Email" required>
+    <textarea id="message" placeholder="Správa" required></textarea>
 
-    <textarea name="message" placeholder="Správa" required></textarea>
-
-    <button type="submit">Odoslať</button>
-
+    <button type="submit">Odoslať správu</button>
 </form>
+
 </section>
+
+
+
 
 <section>
     <h2>Mapa</h2>
@@ -253,4 +255,34 @@ Počas jazdy viem pomôcť so základnými technickými problémami, navigáciou
 </footer>
 
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+(function () {
+    emailjs.init({
+        publicKey: "HodSkaH6womtXm5Et"
+    });
+})();
+
+function sendMail(event) {
+    event.preventDefault();
+
+    emailjs.send("svajdlenik", "template_svajdlenik", {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+    })
+    .then(function () {
+        alert("Správa bola úspešne odoslaná.");
+
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+    })
+    .catch(function (error) {
+        alert("Chyba pri odosielaní: " + JSON.stringify(error));
+    });
+}
+</script>
 </html>
