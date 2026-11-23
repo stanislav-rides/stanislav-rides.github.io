@@ -9,6 +9,7 @@
 }
 
 
+
 body {
     font-family: "Segoe UI", Arial, sans-serif;
     max-width: 1400px;
@@ -216,10 +217,9 @@ color: var(--text-muted);
 }
 
 .content-card h2 {
-    color: #fc4c02;
-    margin-top: 0;
-    margin-bottom: 25px;
+    color: #ffffff;
 }
+
 
 .content-card p {
     color: #f8fafc;
