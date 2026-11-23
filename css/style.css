@@ -248,3 +248,14 @@ header p {
     color: white;
     font-size: 1.2rem;
 }
+
+#trasy {
+max-width: 1200px;
+margin: 40px auto;
+}
+ 
+#trasy h2 {
+text-align: center;
+margin-bottom: 30px;
+color: #1f2937;
+}
