@@ -205,3 +205,21 @@ color: var(--text-muted);
     height: 650px;
     display: block;
 }
+
+.content-card {
+background: #1e293b;
+border-radius: 20px;
+padding: 35px;
+margin-bottom: 30px;
+box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+border-left: 6px solid #fc4c02;
+}
+ 
+.content-card h2 {
+color: #fc4c02;
+margin-top: 0;
+}
+ 
+.content-card p {
+color: #f1f5f9;
+}
